@@ -1,0 +1,22 @@
+---
+import { getFiles } from '@/lib/api/files'
+
+const files = await getFiles()
+---
+
+<ul class="space-y-2">
+  <strong>API Response:</strong>{
+    files && files.length > 0 ? (
+      files.map((file) => (
+        <li class="border p-4 rounded">
+          <h3 class="font-semibold">{file.filename}</h3>
+          <p>Size: {file.filesize} bytes</p>
+          <p>Type: {file.filetype}</p>
+          <p>Created: {file.createdAt.toLocaleDateString()}</p>
+        </li>
+      ))
+    ) : (
+      <p>No files available.</p>
+    )
+  }
+</ul>

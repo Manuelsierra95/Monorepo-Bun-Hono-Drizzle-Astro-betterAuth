@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src/**/*.ts", "./eslint.config.js", "index.ts"],
+  "exclude": ["./node_modules", "dist"]
+}

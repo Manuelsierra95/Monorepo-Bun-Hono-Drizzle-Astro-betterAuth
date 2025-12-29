@@ -1,0 +1,16 @@
+{
+  "name": "schemas",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "zod": "^4.2.1",
+    "db": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

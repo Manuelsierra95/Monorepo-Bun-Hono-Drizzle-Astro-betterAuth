@@ -1,0 +1,18 @@
+{
+  "name": "auth",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "better-auth": "^1.4.9",
+    "db": "workspace:*",
+    "env": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@better-auth/cli": "^1.4.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "scripts": {
+    "dev": "bun run --hot --env-file=../../packages/env/.env.shared --env-file=../../packages/env/.env.server src/index.ts"
+  },
+  "dependencies": {
+    "db": "workspace:*",
+    "auth": "workspace:*",
+    "env": "workspace:*",
+    "hono": "^4.11.1",
+    "drizzle-orm": "^0.45.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
