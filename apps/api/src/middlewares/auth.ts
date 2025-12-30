@@ -12,8 +12,8 @@ export const requireAuth = honoFactory.createMiddleware(async (c, next) => {
     return c.json(
       {
         success: false,
-        error: 'No autenticado',
-        message: 'Debes iniciar sesión para acceder a este recurso',
+        error: 'Not authenticated',
+        message: 'You must log in to access this resource',
       },
       401
     )
